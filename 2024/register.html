@@ -1,0 +1,245 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Registration - Canadian Nationals 2023</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<link rel="stylesheet" type="text/css" href="footer.css"/>
+<link rel="stylesheet" type="text/css" href="register.css"/>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans|Oswald">
+<meta name="description" content="Canadian National Return Top Championship 2023" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="keywords" content="yo-yo, yoyo, yoyos, toronto, yoyoing, canada, ontario, return top, return, top, competition, championship, contest, national, nats, nationals" />
+<meta property="og:image" content="http://canadanationals.com/fb_preview.jpg" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script type="text/javascript">
+function getPrice()
+{
+    var divs = document.getElementsByName("division");
+    var total = 0;
+    var total_str = "";
+    
+    var div_str = "Divisions - ";
+
+    divs[0].disabled = false;
+    divs[1].disabled = false;
+    divs[2].disabled = false;
+    div_str = "Divisions - ";
+    total_str = "$" + total + " CAD";
+
+    if(divs[2].checked) /* international */
+    {
+        total = 100;
+        var int_style = document.getElementsByName("int-style");
+        div_str = div_str + "International (" + int_style[0].value + ")";
+        total_str = "$" + total + " CAD";
+
+        /* disables Canadian 1A and open */
+        divs[0].disabled = true;
+        divs[0].checked = false;
+
+        divs[1].disabled = true;
+        divs[1].checked = false;
+    }
+
+    else if(divs[0].checked || divs[1].checked)
+    {
+        /* disables international */
+        divs[2].disabled = true;
+        divs[2].checked = false;
+    
+        if(divs[0].checked && divs[1].checked)
+        {
+            total = 200;
+            
+            var open_style = document.getElementsByName("open-style");
+            div_str = div_str + "1A, Open (" + open_style[0].value + ")";
+        }
+        else if(divs[0].checked)
+        {
+            total = 100;
+            div_str = div_str + "1A"
+        }
+        else if(divs[1].checked)
+        {
+            total = 100;
+            
+            var open_style = document.getElementsByName("open-style");
+            div_str = div_str + "Open (" + open_style[0].value + ")";        
+        }
+        
+        total_str = "$" + total + " CAD";
+    }
+    
+    var item_name = document.getElementsByName("item_name");
+    item_name[0].value = div_str;
+    
+    document.getElementById("amount-display").innerHTML = total_str;
+    
+    var a = document.getElementsByName("amount");
+    a[0].value = total;
+    
+    return total;
+}
+function checkstyle()
+{
+    if(getPrice() <= 0)
+    {
+        alert("Please select at least one division to enter.");
+        return false;
+    }
+
+    var open_div = document.getElementById("open_div");
+    var open_style = document.getElementsByName("open-style");
+    var int_style = document.getElementsByName("int-style");
+
+    if(open_div.checked && open_style[0].value=="INVALID")
+    {
+        alert("Please select a style for your Open division routine.");
+        return false;
+    }
+    
+    if(int_div.checked && int_style[0].value=="INVALID")
+    {
+        alert("Please select a style for your International division routine.");
+        return false;
+    }
+    
+    return true;
+}
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+</head>
+
+<body onload="getPrice();">
+    <div id="menu">
+        <div id="menu-container">
+            <a href="index.html">About</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="venue.html">Venue</a>
+            <a href="rules.html">Rules</a>
+            <a href="faq.html">FAQ</a>
+            <a id="active" href="register.html">Register</a>
+        </div>
+    </div>
+    
+    <div id="content">
+    
+    <h1>Register</h1>
+    <p>Online registration is mandatory for <span class="emphasis">ALL contestants</span> in all divisions.
+    Spectators, including friends and family members of contestants, may enter the contest hall for free.</p> 
+	
+	<table class="deadline-table">
+	<tr class="headrow"><td>Registration fees</td><td>Deadline</td></tr>
+	<tr><td>$100 CAD per division</td><td>-</td></tr>
+	<tr class="blankrow"></tr>
+	<tr class="headrow"><td>Music upload fees</td><td>Deadline</td></tr>
+	<tr><td>$30 CAD per division</td><td>-</td></tr>
+	</table>
+    
+    <h1>Step 1: Registration fee</h1>
+    <p>Select the division(s) you'd like to compete in. When you click "Register", you will be brought to a PayPal checkout page to send payment.</p>
+    <ul>
+	<li>You can have someone else (parent, friend, etc) pay for you. In step 2 below, you will enter the actual competitor's information.</li>
+    <li>You can pay as a guest using a credit card without a PayPal account.</li>
+    <li>If this does not work, please <a href="mailto:canadianyoyoassociation@gmail.com">contact the organizer</a> for alternatives.
+    <li>See <a href="faq.html">FAQs</a> on divisions and eligibilities.</li>
+    </ul>
+    <form onsubmit="return checkstyle();" target="_self" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+
+    <input type="hidden" name="business" value="wayne.ngan@gmail.com">
+
+    <input type="hidden" name="cmd" value="_xclick">
+    
+    <div class="fees-row">
+    <input type="checkbox" name="division" id="1a_div" onclick="getPrice();"><div class="fees-cell">1A</div> $100 CAD
+    </div>
+    <div class="fees-row">
+    <input type="checkbox" name="division" id="open_div" onclick="getPrice();"><div class="fees-cell">Open&nbsp;&nbsp;
+    <select name="open-style">
+        <option value="INVALID">Style</option>
+        <option value="2A">2A</option>
+        <option value="3A">3A</option>
+        <option value="4A">4A</option>
+        <option value="5A">5A</option>
+    </select>
+    </div>
+    $100 CAD
+    </div>
+    <div class="fees-row" hidden=true>
+    <input type="checkbox" name="division" id="int_div" onclick="getPrice();"><div class="fees-cell">International&nbsp;
+    <select name="int-style">
+        <option value="INVALID">Style</option>
+        <option value="1A">1A</option>
+        <option value="2A">2A</option>
+        <option value="3A">3A</option>
+        <option value="4A">4A</option>
+        <option value="5A">5A</option>
+    </select>
+    </div>
+    $100 CAD
+    </div>
+    <div class="fees-total">
+    <div class="fees-cell">Total</div>
+    <span id="amount-display">$0 CAD</span>
+    </div>
+
+    <br/>
+    
+    <input type="hidden" name="item_name" value="INVALID REGISTRATION">
+    <input type="hidden" name="amount" value="0">
+    
+    <input type="hidden" name="currency_code" value="CAD">
+
+    <div align="center">
+    <script type="text/javascript">
+    <!--
+        document.write('<input type="submit" class="register_button" value="Register">');
+    //-->
+    </script>
+    <noscript>
+        <div class="register_button" id="disabled">Register</div>
+        <p><span style="font-weight:bold;color:red;">PLEASE ENABLE JAVASCRIPT IN ORDER TO REGISTER.</span></p>
+    </noscript>
+    </div>
+    </form>
+    
+
+    <h1>Step 2: Music upload</h1>
+    <p>Music upload/change now requires an additional fee of $30 CAD.
+    Alternatively you may choose to be assigned random music for your routine(s).</p>
+        
+    <p>Please <a href="mailto:canadianyoyoassociation@gmail.com">contact the organizer</a> for arrangements.</p>
+    
+    <h1>That's it!</h1>
+    <p>If you have paid your fees and uploaded your music, then your registration is complete. Good luck!! We look forward to seeing you on stage on May 21.</p>
+
+    <p>Want an idea who else might be coming? Make sure to check out our <a href="https://www.facebook.com/events/724589305975390" target="_blank">Facebook event</a>.</p>
+
+    <p>If there are any changes to this contest, they will be announced on CANYA's website and social media pages. Make sure
+    to bookmark and follow to stay up to date.</p>
+    <ul>
+        <li><a href="http://www.canadayoyo.ca" target="_blank">Website: canadayoyo.ca</a></li>
+        <li><a href="https://www.instagram.com/canadianyoyoassociation/" target="_blank">Instagram: @canadianyoyoassociation</a></li>
+        <li><a href="https://www.facebook.com/canadianyoyoassociation" target="_blank">Facebook: @canadianyoyoassociation</a></li>
+    </ul>
+    
+    
+    
+    </div>
+    
+    <div id="sponsor-footer">
+	<h2>Sponsors</h2>
+    </div>
+	
+	<script src="sponsors.js"></script>
+    <script>
+        loadGoldSponsors("sponsor-footer", 0.6);
+    </script>
+    
+</body>
+
+</html>
+
