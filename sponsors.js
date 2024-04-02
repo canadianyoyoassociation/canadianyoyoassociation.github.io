@@ -54,24 +54,31 @@ function loadGoldSponsors(id, scale) {
 function loadOneSilverSponsor(num, elem, scale) {
     switch (num) {
         case 0:
-            showOneSponsor(elem, "https://onedropyoyos.com/", "sponsors/onedrop.png", "One Drop YoYos", 240*scale);
+            showOneSponsor(elem, "https://onedropyoyos.com/", "sponsors/onedrop.png", "One Drop YoYos", 250*scale);
             break;
         case 1:
             showOneSponsor(elem, "https://duncantoys.com/", "sponsors/duncan.png", "Duncan", 240*scale);
             break;
         case 2:
-            showOneSponsor(elem, "https://www.layerinfinity.com/", "sponsors/layerinfinity.png", "Layer Infinity", 240*scale);
+            showOneSponsor(elem, "https://www.layerinfinity.com/", "sponsors/layerinfinity.png", "Layer Infinity", 210*scale);
             break;
         case 3:
-            showOneSponsor(elem, "https://www.44emporium.com/", "sponsors/44emporium.png", "44 Emporium", 240*scale);
+            showOneSponsor(elem, "https://www.44emporium.com/", "sponsors/44emporium.png", "44 Emporium", 250*scale);
             break;
+        case 4:
+            showOneSponsor(elem, "https://www.gomagicyoyo.com/", "sponsors/magicyoyo.png", "MagicYoyo", 240*scale);
+            break;
+        case 5:
+            showOneSponsor(elem, "https://raincityskills.com/", "sponsors/raincity.png", "Rain City Skills", 180*scale);
+            break;
+
 
     }
 }
 
 function loadOtherSponsors(id, scale) {
     var elem = document.getElementById(id);
-    numSilverSponsors = 4;
+    numSilverSponsors = 6;
     order = genRandArray(numSilverSponsors);
     for (i = 0; i < numSilverSponsors; i++) {
         loadOneSilverSponsor(order[i], elem, scale);
