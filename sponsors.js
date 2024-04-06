@@ -30,8 +30,13 @@ function genRandArray(max) {
 function loadOneGoldSponsor(num, elem, scale) {
     switch (num) {
         case 0:
-            showOneSponsor(elem, "https://a-rt.ca/", "sponsors/art_temp.png", "Alternate Return Tops", 380*scale);
+            showOneSponsor(elem, "https://yoyoexpert.com/", "sponsors/yoyoexpert.png", "Yoyoexpert", 380*scale);
             break;
+
+//        case 1:
+//            showOneSponsor(elem, "https://a-rt.ca/", "sponsors/art_temp.png", "Alternate Return Tops", 380*scale);
+//            break;
+
     }
 }
 
@@ -71,6 +76,9 @@ function loadOneSilverSponsor(num, elem, scale) {
         case 5:
             showOneSponsor(elem, "https://raincityskills.com/", "sponsors/raincity.png", "Rain City Skills", 180*scale);
             break;
+        case 6:
+            showOneSponsor(elem, "https://www.c3yoyodesign.com/", "sponsors/C3.png", "C3 Yoyodesign", 250*scale);
+            break;
 
 
     }
@@ -78,7 +86,7 @@ function loadOneSilverSponsor(num, elem, scale) {
 
 function loadOtherSponsors(id, scale) {
     var elem = document.getElementById(id);
-    numSilverSponsors = 6;
+    numSilverSponsors = 7;
     order = genRandArray(numSilverSponsors);
     for (i = 0; i < numSilverSponsors; i++) {
         loadOneSilverSponsor(order[i], elem, scale);
