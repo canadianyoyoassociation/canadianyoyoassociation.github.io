@@ -79,14 +79,16 @@ function loadOneSilverSponsor(num, elem, scale) {
         case 6:
             showOneSponsor(elem, "https://www.c3yoyodesign.com/", "sponsors/C3.png", "C3 Yoyodesign", 250*scale);
             break;
-
+        case 7:
+            showOneSponsor(elem, "http://generalyo.com/", "sponsors/generalyo.png", "GeneralYo", 250*scale);
+            break;
 
     }
 }
 
 function loadOtherSponsors(id, scale) {
     var elem = document.getElementById(id);
-    numSilverSponsors = 7;
+    numSilverSponsors = 8;
     order = genRandArray(numSilverSponsors);
     for (i = 0; i < numSilverSponsors; i++) {
         loadOneSilverSponsor(order[i], elem, scale);
@@ -96,9 +98,9 @@ function loadOtherSponsors(id, scale) {
     }
 
     /* Bronzes */
-//	br(elem);
+    br(elem);
 //    showOneSponsor(elem, "https://treasureislandtoys.ca/", "sponsors/treasureislandtoys.png", "Treasure Island Toys", 200*scale);
-//    showOneSponsor(elem, "https://mk1yoyos.com/", "sponsors/mk1.png", "MK1 yoyos", 150*scale);
+    showOneSponsor(elem, "https://mk1yoyos.com/", "sponsors/mk1.png", "MK1 yoyos", 120*scale);
 //    showOneSponsor(elem, "http://generalyo.com/", "sponsors/generalyo.png", "General Yo", 190*scale);
 //    showOneSponsor(elem, "https://www.lathedbackdesign.com/", "sponsors/lathedbackdesign.png", "Lathed Back Design", 115*scale);
 }
