@@ -125,7 +125,6 @@ function loadOtherSponsors(id, scale) {
 function loadVendors(id, scale) {
     var elem = document.getElementById(id);
     showOneSponsor(elem, "https://raincityskills.com/", "sponsors/raincity.png", "Rain City Skills", 140*scale);
-    showOneSponsor(elem, "https://www.instagram.com/j.dye_.ca/", "sponsors/jdye.png", "J-Dye", 140*scale);
-    showOneSponsor(elem, "https://polyformyoyos.com/", "sponsors/polyform_round.png", "Polyform", 140*scale);
-    showOneSponsor(elem, "https://www.yo-yo.com/", "sponsors/duncan.png", "Duncan", 200*scale);
+    showOneSponsor(elem, "https://a-rt.ca/", "sponsors/art.png", "Alternate Return Tops", 240*scale);
+
 }
