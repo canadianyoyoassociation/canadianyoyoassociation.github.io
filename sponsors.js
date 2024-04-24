@@ -103,9 +103,8 @@ function loadOtherSponsors(id, scale) {
 
     /* Bronzes */
     br(elem);
-//    showOneSponsor(elem, "https://treasureislandtoys.ca/", "sponsors/treasureislandtoys.png", "Treasure Island Toys", 200*scale);
     showOneSponsor(elem, "https://mk1yoyos.com/", "sponsors/mk1.png", "MK1 yoyos", 120*scale);
-//    showOneSponsor(elem, "http://generalyo.com/", "sponsors/generalyo.png", "General Yo", 190*scale);
+    showOneSponsor(elem, "https://www.motionyoyo.com/", "sponsors/motionyoyo.png", "Motion YoYo", 140*scale);
 //    showOneSponsor(elem, "https://www.lathedbackdesign.com/", "sponsors/lathedbackdesign.png", "Lathed Back Design", 115*scale);
 }
 
