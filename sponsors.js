@@ -44,6 +44,10 @@ function loadOneGoldSponsor(num, elem, scale) {
         case 3:
             showOneSponsor(elem, "https://clyw.ca/", "sponsors/clyw.png", "Caribou Lodge Return Tops", 240*scale);
             break;
+            
+        case 4:
+            showOneSponsor(elem, "https://mfdyoyo.com/", "sponsors/mfd.png", "MonkeyfingeR", 290*scale);
+            break;
     }
 }
 
@@ -52,11 +56,11 @@ function loadGoldSponsors(id, scale) {
  //   showOneSponsor(elem, "https://polyformyoyos.com/", "sponsors/polyform.jpg", "Polyform", 1000*scale);
     br(elem);
 
-    numSponsors = 4;
+    numSponsors = 5;
     order = genRandArray(numSponsors);
     for (i = 0; i < numSponsors; i++) {
         loadOneGoldSponsor(order[i], elem, scale);
-        if (((i + 1) % 2) == 0) {
+        if (((i + 1) % 3) == 0) {
             br(elem);
             br(elem);
         }
