@@ -1,6 +1,6 @@
-function showOneSponsor(elem, url, imgsrc, alt, width) {
+function showOneSponsor(elem, url, imgsrc, alt, width, target="_blank") {
     var link = document.createElement("a");
-    link.target = "_blank";
+    link.target = target;
     link.href = url;
 
     var img = document.createElement("img");
@@ -50,7 +50,7 @@ function loadOneGoldSponsor(num, elem, scale) {
             break;
             
         case 5:
-            showOneSponsor(elem, "", "sponsors/Yichenghao.png", "Yichenghao", 260*scale);
+            showOneSponsor(elem, "", "sponsors/Yichenghao.png", "Yichenghao", 260*scale, "_self");
             break;
 
     }
