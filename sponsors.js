@@ -48,6 +48,11 @@ function loadOneGoldSponsor(num, elem, scale) {
         case 4:
             showOneSponsor(elem, "https://mfdyoyo.com/", "sponsors/mfd.png", "MonkeyfingeR", 290*scale);
             break;
+            
+        case 5:
+            showOneSponsor(elem, "", "sponsors/Yichenghao.png", "Yichenghao", 260*scale);
+            break;
+
     }
 }
 
@@ -56,7 +61,7 @@ function loadGoldSponsors(id, scale) {
  //   showOneSponsor(elem, "https://polyformyoyos.com/", "sponsors/polyform.jpg", "Polyform", 1000*scale);
     br(elem);
 
-    numSponsors = 5;
+    numSponsors = 6;
     order = genRandArray(numSponsors);
     for (i = 0; i < numSponsors; i++) {
         loadOneGoldSponsor(order[i], elem, scale);
