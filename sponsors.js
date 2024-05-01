@@ -50,7 +50,11 @@ function loadOneGoldSponsor(num, elem, scale) {
             break;
             
         case 5:
-            showOneSponsor(elem, "", "sponsors/Yichenghao.png", "Yichenghao", 260*scale, "_self");
+            showOneSponsor(elem, "", "sponsors/Yichenghao.png", "Yichenghao", 300*scale, "_self");
+            break;
+            
+        case 6:
+            showOneSponsor(elem, "https://www.44emporium.com/", "sponsors/44emporium.png", "44 Emporium", 500*scale);
             break;
 
     }
@@ -61,7 +65,7 @@ function loadGoldSponsors(id, scale) {
  //   showOneSponsor(elem, "https://polyformyoyos.com/", "sponsors/polyform.jpg", "Polyform", 1000*scale);
     br(elem);
 
-    numSponsors = 6;
+    numSponsors = 7;
     order = genRandArray(numSponsors);
     for (i = 0; i < numSponsors; i++) {
         loadOneGoldSponsor(order[i], elem, scale);
@@ -105,15 +109,15 @@ function loadOtherSponsors(id, scale) {
     order = genRandArray(numSilverSponsors);
     for (i = 0; i < numSilverSponsors; i++) {
         loadOneSilverSponsor(order[i], elem, scale);
-        if (((i + 1) % 3) == 0) {
+        if (((i + 1) % 4) == 0) {
             br(elem);
         }
     }
 
     /* Bronzes */
     br(elem);
-    showOneSponsor(elem, "https://mk1yoyos.com/", "sponsors/mk1.png", "MK1 yoyos", 120*scale);
-    showOneSponsor(elem, "https://www.motionyoyo.com/", "sponsors/motionyoyo.png", "Motion YoYo", 140*scale);
+    showOneSponsor(elem, "https://mk1yoyos.com/", "sponsors/mk1.png", "MK1 yoyos", 100*scale);
+    showOneSponsor(elem, "https://www.motionyoyo.com/", "sponsors/motionyoyo.png", "Motion YoYo", 120*scale);
 //    showOneSponsor(elem, "https://www.lathedbackdesign.com/", "sponsors/lathedbackdesign.png", "Lathed Back Design", 115*scale);
 }
 
