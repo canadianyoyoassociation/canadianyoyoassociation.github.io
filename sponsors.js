@@ -69,7 +69,7 @@ function loadGoldSponsors(id, scale) {
     order = genRandArray(numSponsors);
     for (i = 0; i < numSponsors; i++) {
         loadOneGoldSponsor(order[i], elem, scale);
-        if (((i + 1) % 4) == 0) {
+        if (((i + 1) % 3) == 0) {
             br(elem);
             br(elem);
         }
