@@ -69,7 +69,7 @@ function loadGoldSponsors(id, scale) {
     order = genRandArray(numSponsors);
     for (i = 0; i < numSponsors; i++) {
         loadOneGoldSponsor(order[i], elem, scale);
-        if (((i + 1) % 3) == 0) {
+        if (((i + 1) % 4) == 0) {
             br(elem);
             br(elem);
         }
@@ -138,5 +138,6 @@ function loadVendors(id, scale) {
     var elem = document.getElementById(id);
     showOneSponsor(elem, "https://raincityskills.com/", "sponsors/raincity.png", "Rain City Skills", 140*scale);
     showOneSponsor(elem, "https://a-rt.ca/", "sponsors/art.png", "Alternate Return Tops", 240*scale);
+    showOneSponsor(elem, "http://www.canadayoyo.ca/", "sponsors/canya_logo.png", "CANYA", 110*scale);
 
 }
