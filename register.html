@@ -31,7 +31,7 @@ function getPrice()
 
     if(divs[2].checked) /* international */
     {
-        total = 50;
+        total = 100;
         var int_style = document.getElementsByName("int-style");
         div_str = div_str + "International (" + int_style[0].value + ")";
         total_str = "$" + total + " CAD";
@@ -52,19 +52,19 @@ function getPrice()
     
         if(divs[0].checked && divs[1].checked)
         {
-            total = 100;
+            total = 200;
             
             var open_style = document.getElementsByName("open-style");
             div_str = div_str + "1A, Open (" + open_style[0].value + ")";
         }
         else if(divs[0].checked)
         {
-            total = 50;
+            total = 100;
             div_str = div_str + "1A"
         }
         else if(divs[1].checked)
         {
-            total = 50;
+            total = 100;
             
             var open_style = document.getElementsByName("open-style");
             div_str = div_str + "Open (" + open_style[0].value + ")";        
@@ -132,16 +132,15 @@ function checkstyle()
     <h1>Register</h1>
     <p>Online registration is mandatory for <span class="emphasis">ALL contestants</span> in all divisions.
     Spectators, including friends and family members of contestants, may enter the contest hall for free.</p> 
-    <p>The fee is currently $50 CAD per division which applies until May 12th, and there will be another increase to $100 CAD 
-    per division if registered until the day before the contest.</p>
-    <p>Music upload fee will not occur until May 12th. After that, there will be $30 CAD for music upload. </p>
+    <p>The registration now costs $100 CAD per division and will be open until the day before the contest.</p>
+    <p>Music upload/change costs $30 CAD and accepated until the day before the contest. </p>
     <table class="deadline-table">
     <tr class="headrow"><td>Registration fees</td><td>Deadline</td></tr>
-    <tr><td>$50 CAD per division</td><td>May 12th</td></tr>
+    <!--<tr><td>$50 CAD per division</td><td>May 12th</td></tr>-->
     <tr><td>$100 CAD per division</td><td>&mdash;</td></tr>
     <tr class="blankrow"></tr>
     <tr class="headrow"><td>Music upload fees</td><td>Deadline</td></tr>
-    <tr><td>FREE</td><td>May 12th</td></tr>
+    <!--<tr><td>FREE</td><td>May 12th</td></tr>-->
     <tr><td>$30 CAD</td><td>&mdash;</td></tr>
     </table>
     
@@ -160,7 +159,7 @@ function checkstyle()
     <input type="hidden" name="cmd" value="_xclick">
     
     <div class="fees-row">
-    <input type="checkbox" name="division" id="1a_div" onclick="getPrice();"><div class="fees-cell">Canadian 1A</div> $50 CAD
+    <input type="checkbox" name="division" id="1a_div" onclick="getPrice();"><div class="fees-cell">Canadian 1A</div> $100 CAD
     </div>
     <div class="fees-row">
     <input type="checkbox" name="division" id="open_div" onclick="getPrice();"><div class="fees-cell">Canadian Open&nbsp;&nbsp;
@@ -172,7 +171,7 @@ function checkstyle()
         <option value="5A">5A</option>
     </select>
     </div>
-    $50 CAD
+    $100 CAD
     </div>
     <div class="fees-row" >
     <input type="checkbox" name="division" id="int_div" onclick="getPrice();"><div class="fees-cell">International&nbsp;
@@ -185,7 +184,7 @@ function checkstyle()
         <option value="5A">5A</option>
     </select>
     </div>
-    $50 CAD
+    $100 CAD
     </div>
     <div class="fees-total">
     <div class="fees-cell">Total</div>
@@ -214,9 +213,12 @@ function checkstyle()
     
 
     <h1>Step 2: Music upload</h1>
+    
+    <p>Music upload/change now requires an additional fee of $30 CAD. Alternatively you may choose to be assigned random music for your routine(s).</p>
+    <!--
     <p>Music upload/change is currently free. There will be $30 CAD of fee introduced starting on May 12th until the day before the contest.</p>
     <p><a href="https://forms.gle/Ft71ReK17QmFZV3L8" target="_blank">Click here </a>to submit your musics </p>
-    
+    -->
     <!--<p>Alternatively you may choose to be assigned random music for your routine(s).</p>
     -->
         

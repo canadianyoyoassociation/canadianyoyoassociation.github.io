@@ -96,12 +96,16 @@ function loadOneSilverSponsor(num, elem, scale) {
         case 5:
             showOneSponsor(elem, "http://generalyo.com/", "sponsors/generalyo.png", "GeneralYo", 250*scale);
             break;
+        case 6:
+            showOneSponsor(elem, "https://www.lathedbackdesign.com/", "sponsors/lathedbackdesign.png", "Lathed Back Design", 210*scale);
+            break;
+
     }
 }
 
 function loadOtherSponsors(id, scale) {
     var elem = document.getElementById(id);
-    numSilverSponsors = 6;
+    numSilverSponsors = 7;
     order = genRandArray(numSilverSponsors);
     for (i = 0; i < numSilverSponsors; i++) {
         loadOneSilverSponsor(order[i], elem, scale);
