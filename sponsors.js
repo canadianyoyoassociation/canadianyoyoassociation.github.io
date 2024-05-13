@@ -97,7 +97,7 @@ function loadOneSilverSponsor(num, elem, scale) {
             showOneSponsor(elem, "http://generalyo.com/", "sponsors/generalyo.png", "GeneralYo", 250*scale);
             break;
         case 6:
-            showOneSponsor(elem, "https://www.lathedbackdesign.com/", "sponsors/lathedbackdesign.png", "Lathed Back Design", 210*scale);
+            showOneSponsor(elem, "https://www.lathedbackdesign.com/", "sponsors/lathedbackdesign.png", "Lathed Back Design", 180*scale);
             break;
 
     }
