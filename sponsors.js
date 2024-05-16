@@ -50,7 +50,7 @@ function loadOneGoldSponsor(num, elem, scale) {
             break;
             
         case 5:
-            showOneSponsor(elem, "", "sponsors/Yichenghao.png", "Yichenghao", 300*scale, "_self");
+            showOneSponsor(elem, "https://www.instagram.com/ych_yoyo/", "sponsors/Yichenghao.png", "Yichenghao", 300*scale);
             break;
             
         case 6:
