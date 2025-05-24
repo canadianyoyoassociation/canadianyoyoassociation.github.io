@@ -1,0 +1,29 @@
+#sponsor-footer {
+/*    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;*/
+    width: 100%;
+    background-color: #222222;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#sponsor-footer h1 {
+    font-size: 35px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+}
+
+#sponsor-footer img {
+    margin: 10px 10px 15px 10px;
+    vertical-align: middle;
+    opacity: 0.8;
+}
+/*#sponsor-footer img.squeeze {
+    margin: 10px 0px 10px 0px;
+}*/
+
+#sponsor-footer img:hover {
+    opacity: 1.0;
+}

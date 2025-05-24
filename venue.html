@@ -1,8 +1,9 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Canadian Nationals 2025: July 5 in Toronto</title>
+<title>Venue - Canadian Nationals 2025: July 5 in Toronto</title>
 <link rel="stylesheet" type="text/css" href="style.css"/>
+<link rel="stylesheet" type="text/css" href="footer.css"/>
 <link rel="stylesheet" type="text/css" href="font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="bootsnav.css" >	
@@ -16,27 +17,6 @@
 <meta name="keywords" content="yo-yo, yoyo, yoyos, toronto, yoyoing, canada, ontario, return top, competition, championship, contest, national, nationals"/>
 <meta property="og:image" content="https://canadanationals.com/FBpreview.jpg" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<style>
-
-#result-container {
-    margin-top: 30px;
-    text-align: center;
-}
-
-.result-box {
-    display: inline-block;
-    margin-right: 50px;
-    text-align: left;
-}
-
-#content {
-    padding-bottom: 100px;
-}
-
-
-
-</style>
 
 </head>
 
@@ -63,57 +43,51 @@
         </div><!--/.container-->
     </nav><!--/nav-->
     
-    <div id="welcome">
-        <img src="logo_800.png" alt="Canadian Nationals 2025" />
-        <h1>SATURDAY JULY 5<br/>TORONTO ON</h1>
-        <span id="hashtag">#CanadaNats2025</span>
-    </div>
-    
-
     <div id="content">
-	
-		<!--<h1>Performance order and results</h1>
-        <a id="results-button" href="results.html">Results</a>-->
-
-       
-        <h1>About Canadian Nationals 2025</h1>
-        <p>Welcome to the official website of the Canadian National Return Top Championship 2025! Some of the finest return top players from all over Canada
-        will be competing for this year's nationals titles in Toronto on Saturday July 5. As a member organization of the
-        <a href="https://iyyf.org/" target="_blank">International Yo-Yo Federation (IYYF)</a>,
-        the winners of Canadian Nationals will be seeded to the <a href="https://wyyc2025.com/" target="_blank">World YoYo Contest 2025</a>.
+        
+        <h1>Toronto Public Library: York Woods</h1>
+        
+        <div style="text-align: center;"><img src="theatre-rental-main.jpg" alt="Library Theatre" /></div>
+        
+        <p>Canadian Nationals 2025 will be held in the performance theatre in the York Woods branch of Toronto Public Library.
+        For more information about the library, visit the 
+        <a href="https://www.torontopubliclibrary.ca/yorkwoods/" target="_blank">
+        Toronto Public Library website</a>.
         </p>
-        <p>This event is family-friendly and open to the public for free. Spectators may enter this event without admission fees.
-        Contestants entering Championship or Junior divisions must <a href="register.html">register here</a>.</p>
         
-        <p>The social media hashtag is <strong>#CanadaNats2025</strong>. To receive the latest updates or get in touch with us, make sure to follow CANYA on social media.</p>
-        <a id="socials-button" href="https://linktr.ee/canadianyoyoassociation" target="_blank">&#64;canadianyoyoassociation</a>
-		
-        <div id="gold-sponsor-logos">
-            <!--<h1>Sponsors</h1>-->
-		</div>
-        
-        <div id="sponsor-logos">
-        </div>
+        <p>The event will be open to the public with no admission fees for spectators.</p>
 
+        <h1>Location</h1>
+        <p align="center">
+        1785 Finch Avenue West<br/>
+        Toronto, ON  M3N 1M6 <br/>
+        416-395-5980<br/><br/>
+        </p>
+        <p>The nearest subway station is <strong>Finch WEST station</strong> (not to be confused with <strong>Finch Station</strong>).
+        From Finch West station, the library can be reached by either a 20-minute walk or by <a href="https://www.ttc.ca/routes-and-schedules/36/0" target="_blank">bus 36 west bound</a>.</p>
+        
+        <img src="york-woods-library-exterior.jpg" alt="York Woods Library"/>
+   
+        <div align="center">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5763.326203161979!2d-79.50930005162769!3d43.759092358295334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b31d11f1bcbdb%3A0xd2ab8ea247e6c868!2sYork%20Woods%20Library%20Theatre!5e0!3m2!1sen!2sca!4v1747857996182!5m2!1sen!2sca" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div> 
+        
     </div>
+	
+	<!--<div id="sponsor-footer">
+        <h1>Gold Sponsors</h1>
+        <div id="gold-sponsor-logos">
+        </div>
+    </div>-->
     
-	<script src="jquery.js"></script>	
+    <script src="jquery.js"></script>	
     <script src="bootstrap.min.js"></script>
     <script src="bootsnav.js"></script>
     <script src="sponsors.js"></script>
     <script>
-        scale = 0.6;
-        screen_width = $(document).width();
-        if (screen_width < 700) {
-            scale *= 0.5;
-        }
-        loadGoldSponsors("gold-sponsor-logos", scale);
-        
-        loadSilverSponsors("sponsor-logos", scale);
+        loadGoldSponsors("sponsor-footer", 0.25);
     </script>
-
-
+    
 </body>
 
 </html>
-

@@ -1,8 +1,9 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Canadian Nationals 2025: July 5 in Toronto</title>
+<title>Schedule - Canadian Nationals 2025: July 5 in Toronto</title>
 <link rel="stylesheet" type="text/css" href="style.css"/>
+<link rel="stylesheet" type="text/css" href="footer.css"/>
 <link rel="stylesheet" type="text/css" href="font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="bootsnav.css" >	
@@ -19,23 +20,13 @@
 
 <style>
 
-#result-container {
-    margin-top: 30px;
-    text-align: center;
+tr:nth-child(odd) {
+    background-color: #222;
 }
 
-.result-box {
-    display: inline-block;
-    margin-right: 50px;
-    text-align: left;
+td {
+    border: 0px;
 }
-
-#content {
-    padding-bottom: 100px;
-}
-
-
-
 </style>
 
 </head>
@@ -62,56 +53,47 @@
             </div><!-- /.navbar-collapse -->
         </div><!--/.container-->
     </nav><!--/nav-->
-    
-    <div id="welcome">
-        <img src="logo_800.png" alt="Canadian Nationals 2025" />
-        <h1>SATURDAY JULY 5<br/>TORONTO ON</h1>
-        <span id="hashtag">#CanadaNats2025</span>
-    </div>
+
     
 
     <div id="content">
-	
-		<!--<h1>Performance order and results</h1>
-        <a id="results-button" href="results.html">Results</a>-->
 
-       
-        <h1>About Canadian Nationals 2025</h1>
-        <p>Welcome to the official website of the Canadian National Return Top Championship 2025! Some of the finest return top players from all over Canada
-        will be competing for this year's nationals titles in Toronto on Saturday July 5. As a member organization of the
-        <a href="https://iyyf.org/" target="_blank">International Yo-Yo Federation (IYYF)</a>,
-        the winners of Canadian Nationals will be seeded to the <a href="https://wyyc2025.com/" target="_blank">World YoYo Contest 2025</a>.
-        </p>
-        <p>This event is family-friendly and open to the public for free. Spectators may enter this event without admission fees.
-        Contestants entering Championship or Junior divisions must <a href="register.html">register here</a>.</p>
+        <h1>Schedule</h1>
         
-        <p>The social media hashtag is <strong>#CanadaNats2025</strong>. To receive the latest updates or get in touch with us, make sure to follow CANYA on social media.</p>
+        <p>The schedule of events will be available shortly before July 5.</p>
+
+        <p>Canadian Nationals will be a one day event starting from about 10am and ending at about 5pm. The planned competition events include</p>
+        
+        <ul>
+            <li>Canadian Championship 1A division (preliminary)</li>
+            <li>Canadian Championship 1A division (finals)</li>
+            <li>Championship Open division</li>
+            <li>International division</li>
+            <li>Junior division</li>
+            <li>Sport ladder</li>
+        </ul>
+        
+        
+        
+        <p>To receive the latest updates, make sure to follow CANYA on social media</p>
         <a id="socials-button" href="https://linktr.ee/canadianyoyoassociation" target="_blank">&#64;canadianyoyoassociation</a>
-		
-        <div id="gold-sponsor-logos">
-            <!--<h1>Sponsors</h1>-->
-		</div>
-        
-        <div id="sponsor-logos">
-        </div>
 
+        
     </div>
     
+    <!--<div id="sponsor-footer">
+        <h1>Gold Sponsors</h1>
+        <div id="gold-sponsor-logos">
+        </div>
+    </div>-->
+     
 	<script src="jquery.js"></script>	
     <script src="bootstrap.min.js"></script>
     <script src="bootsnav.js"></script>
     <script src="sponsors.js"></script>
     <script>
-        scale = 0.6;
-        screen_width = $(document).width();
-        if (screen_width < 700) {
-            scale *= 0.5;
-        }
-        loadGoldSponsors("gold-sponsor-logos", scale);
-        
-        loadSilverSponsors("sponsor-logos", scale);
+        loadGoldSponsors("sponsor-footer", 0.25);
     </script>
-
 
 </body>
 

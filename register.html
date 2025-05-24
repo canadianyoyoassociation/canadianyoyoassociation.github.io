@@ -1,0 +1,315 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Registration - Canadian Nationals 2025: July 5 in Toronto</title>
+<link rel="stylesheet" type="text/css" href="footer.css"/>
+<link rel="stylesheet" type="text/css" href="font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="bootsnav.css" >	
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="register.css"/>
+<link rel="stylesheet" type="text/css" href="responsive.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+<meta name="description" content="Canadian Nationals 2025" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="keywords" content="yo-yo, yoyo, yoyos, toronto, yoyoing, canada, ontario, return top, competition, championship, contest, national, nationals"/>
+<meta property="og:image" content="https://canadanationals.com/FBpreview.jpg" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript">
+function getPrice()
+{
+    var divs = document.getElementsByName("division");
+    var total = 0;
+    var total_str = "";
+    
+    var div_str = "Divisions - ";
+
+    divs[0].disabled = false;
+    divs[1].disabled = false;
+    divs[2].disabled = false;
+    divs[3].disabled = false;
+    div_str = "Divisions - ";
+    total_str = "$" + total;
+
+    if(divs[3].checked) /* junior */
+    {
+        total = 35;
+        div_str = div_str + "Junior";
+        total_str = "$" + total;
+
+        /* disables Championship 1A, open, international */
+        divs[0].disabled = true;
+        divs[0].checked = false;
+
+        divs[1].disabled = true;
+        divs[1].checked = false;
+        
+        divs[2].disabled = true;
+        divs[2].checked = false;
+    }
+    
+    else if(divs[2].checked) /* interntional */
+    {
+        total = 45;
+        var int_style = document.getElementsByName("int-style");
+        div_str = div_str + "International (" + int_style[0].value + ")";
+        total_str = "$" + total;
+
+        /* disables Championship 1A, open, international */
+        divs[0].disabled = true;
+        divs[0].checked = false;
+
+        divs[1].disabled = true;
+        divs[1].checked = false;
+        
+        divs[3].disabled = true;
+        divs[3].checked = false;
+    }
+
+    else if(divs[0].checked || divs[1].checked) /* 1A or open */
+    {
+        /* disables junior */
+        divs[3].disabled = true;
+        divs[3].checked = false;
+        
+        /* disables international */
+        divs[2].disabled = true;
+        divs[2].checked = false;
+    
+        if(divs[0].checked && divs[1].checked)
+        {
+            total = 70;
+            
+            var open_style = document.getElementsByName("open-style");
+            div_str = div_str + "1A, Open (" + open_style[0].value + ")";
+            
+            total_str = "<span style='text-decoration: line-through; text-decoration-thickness: 3px;'>$90</span> $70"
+        }
+        else if(divs[0].checked) /* 1A */
+        {
+            total = 45;
+            div_str = div_str + "1A"
+            total_str = "$" + total;
+        }
+        else if(divs[1].checked) /* open */
+        {
+            total = 45;
+            
+            var open_style = document.getElementsByName("open-style");
+            div_str = div_str + "Open (" + open_style[0].value + ")";     
+            total_str = "$" + total;            
+        }
+    }
+    
+    var item_name = document.getElementsByName("item_name");
+    item_name[0].value = div_str;
+    
+    document.getElementById("amount-display").innerHTML = total_str;
+    
+    var a = document.getElementsByName("amount");
+    a[0].value = total;
+    
+    return total;
+}
+function checkstyle()
+{
+    if(getPrice() <= 0)
+    {
+        alert("Please select at least one division to enter.");
+        return false;
+    }
+
+    var open_div = document.getElementById("open_div");
+    var open_style = document.getElementsByName("open-style");
+    
+    var int_div = document.getElementById("int_div");
+    var int_style = document.getElementsByName("int-style");
+
+    if(open_div.checked && open_style[0].value=="INVALID")
+    {
+        alert("Please select a style for your Open division routine.");
+        return false;
+    }
+    
+    if(int_div.checked && int_style[0].value=="INVALID")
+    {
+        alert("Please select a style for your International division routine.");
+        return false;
+    }
+    
+    return true;
+}
+</script>
+</head>
+
+<body onload="getPrice();">
+    <nav class="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy" data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
+
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+            
+            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="venue.html">Venue</a></li>
+                    <li><a href="format.html">Format</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul><!--/.nav -->
+            </div><!-- /.navbar-collapse -->
+        </div><!--/.container-->
+    </nav><!--/nav-->
+
+    
+
+    <div id="content">
+
+        <h1>Registration</h1>
+        
+        <p>Registration is required for all contestants entering Championship, International, and Junior divisions.
+        Spectators may attend the event for free.</p>
+        
+        <p>Registration involves two steps:
+        <ol>
+            <li>Paying registration fee</li>
+            <li>Uploading music</li>
+        </ol>
+        These two steps
+        can be completed separately any time before the contest, but please keep the following deadlines in mind. <strong>After
+        each deadline is past, the registration fee will increase.</strong></p>
+        
+        
+        <!--<table id="deadline-table">
+            <tr style="background-color: #DDD; font-weight: bold;"><td width="300px">&nbsp;</td><td>Deadline</td></tr>
+            <tr><td><strong>Early bird</strong></td><td>June 22</td></tr>
+            <tr><td><strong>Regular</strong></td><td>June 29</td></tr>
+            <tr><td><strong>Late</strong> <span style="font-size: 14px">(late fee applies to music upload)</span></td><td>July 4</td></tr>
+            <tr><td colspan="2">No fees or music will be accepted on July 5</td></tr>
+        </table>-->
+        
+        <table id="deadline-table">
+            <tr><td>Early bird deadline</td><td>Sunday June 22</td></tr>
+            <tr><td>Regular deadline</td><td>Sunday June 29</td></tr>
+            <tr><td>Final deadline</td><td>Friday July 4</td></tr>
+            <tr><td colspan="2"><span style="font-size: 15px">No fees or music will be accepted on July 5</span></td></tr>
+        </table>
+        
+        <h1>Step 1: Registration fee</h1>
+        
+        <p>Please review the contest's <a href="format.html">format</a> and your <a href="faq.html">eligibility</a> carefully, and select the division(s)
+        you'd like to enter. Then click the "Fee payment" button which will bring you to the payment processing page. </p>
+        
+        <ul>
+            <li>You can have someone else (parent, friend, etc) pay for you. In step 2 below, you will enter the actual contestant's information.</li>
+            <li>Payment is processed by PayPal, but you can pay as a guest using a credit card without a PayPal account.</li>
+            <li>If this does not work, please <a href="mailto:canadianyoyoassociation@gmail.com">contact the organizer</a> for alternatives.
+        </ul>
+        
+        <form onsubmit="return checkstyle();" target="_self" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+
+            <input type="hidden" name="business" value="wayne.ngan@gmail.com">
+
+            <input type="hidden" name="cmd" value="_xclick">
+            
+            <table id="fees-table">
+            
+            <tr>
+                <td><input type="checkbox" name="division" id="1a_div" onclick="getPrice();">&nbsp;&nbsp;&#127464;&#127462; Championship 1A</td><td>$45</td>
+            </tr>
+            
+            <tr>
+                <td><input type="checkbox" name="division" id="open_div" onclick="getPrice();">&nbsp;&nbsp;&#127464;&#127462; Championship Open&nbsp;&nbsp;
+                    <select name="open-style">
+                            <option value="INVALID">Style</option>
+                            <option value="2A">2A</option>
+                            <option value="3A">3A</option>
+                            <option value="4A">4A</option>
+                            <option value="5A">5A</option>
+                        </select>
+                </td><td>$45</td>
+            </tr>
+            
+            <tr>
+                <td><input type="checkbox" name="division" id="int_div" onclick="getPrice();">&nbsp;&nbsp;International&nbsp;&nbsp;
+                    <select name="int-style">
+                            <option value="INVALID">Style</option>
+                            <option value="1A">1A</option>
+                            <option value="2A">2A</option>
+                            <option value="3A">3A</option>
+                            <option value="4A">4A</option>
+                            <option value="5A">5A</option>
+                        </select>
+                </td><td>$45</td>
+            </tr>
+            
+            <tr>
+                <td><input type="checkbox" name="division" id="int_div" onclick="getPrice();">&nbsp;&nbsp;Junior</td><td>$35</td>
+            </tr>
+            
+            <tr id="fees-table-total">
+                <td>Total (CAD)</td><td id="amount-display">$0</td>
+            </tr>
+            </table>
+            
+
+            
+            <input type="hidden" name="item_name" value="INVALID REGISTRATION">
+            <input type="hidden" name="amount" value="0">
+            
+            <input type="hidden" name="currency_code" value="CAD">
+
+            <div align="center">
+            <script type="text/javascript">
+            <!--
+                document.write('<input type="submit" class="register_button" value="Fee payment">');
+            //-->
+            </script>
+            <noscript>
+                <div class="register_button" id="disabled">Register</div>
+                <p><span style="font-weight:bold;color:red;">PLEASE ENABLE JAVASCRIPT IN ORDER TO REGISTER.</span></p>
+            </noscript>
+            </div>
+        </form>
+    
+        <h1>Step 2: Music upload</h1>
+        <p>In this step you will enter your contestant information and upload the music for your routine(s).</p>
+        <p>You can upload or change your music as many time as you like before <strong>Sunday June 29</strong>.
+
+
+        After that, a late fee will apply.</p>
+        <a id="music-button" href="https://forms.gle/gqVCrgsApzm37X6J8" target="_blank">Upload music</a>
+
+    
+        <h1>That's it!</h1>
+        <p>Once you have paid your fee and uploaded your music, your registration is complete.
+        For the latest updates or any questions, please find CANYA on social media!</p>
+        <a id="socials-button" href="https://linktr.ee/canadianyoyoassociation" target="_blank">&#64;canadianyoyoassociation</a>
+        
+    </div>
+    
+    <!--<div id="sponsor-footer">
+        <h1>Gold Sponsors</h1>
+        <div id="gold-sponsor-logos">
+        </div>
+    </div>-->
+    
+	<script src="jquery.js"></script>	
+    <script src="bootstrap.min.js"></script>
+    <script src="bootsnav.js"></script>
+    <script src="sponsors.js"></script>
+    <script>
+        loadGoldSponsors("sponsor-footer", 0.25);
+    </script>
+
+</body>
+
+</html>
+

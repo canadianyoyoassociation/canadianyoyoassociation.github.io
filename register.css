@@ -1,0 +1,113 @@
+#register-box {
+    background-color: #AA3333;
+    border: 4px solid #FFFFFF;
+    width: 100%;
+    padding: 0px 10px 0px 10px;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#register-box p.small {
+	margin: -20px 0 0 0;
+	font-size: 16px;
+}
+
+.register_button {
+    border: 0;
+    padding: 10px 20px 10px 50px;
+    background-color: #AA0000;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    display: inline-block;
+    background-image: url("paypal_icon.png");
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position: 14px 12px;
+}
+.register_button:hover {
+    background-color: #550000;
+    color: white;
+    cursor: pointer;
+}
+
+.register_button#disabled {
+    background-color: #888888;
+    color: #DDDDDD;
+    text-decoration: line-through;
+}
+
+#fees-table {
+}
+ 
+#fees-table tr {
+    margin: 3px auto;
+    background-color: #EEE;
+    width: 360px;
+    height: 60px;
+    border: 5px solid #FFF;
+}
+#fees-table tr:hover {
+    background-color: #DDD;
+}
+ 
+#fees-table td {
+    width: 150px;
+    border-right-style: none;
+    border-left-style: none;
+}
+
+#fees-table td:first-child {
+    padding: 0px 0px 0px 20px;
+    width: 350px;
+}
+
+#fees-table-total {
+    background-color: #AAF !important;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#deadline-table tr {
+    background-color: #EEE;
+}
+
+#deadline-table tr:nth-child(3) {
+    font-weight: bold;
+}
+
+#deadline-table td {
+    max-width: 320px;
+    height: 3em;
+    border: 5px solid white;
+    border-right-style: none;
+    border-left-style: none;
+}
+
+
+p.restrictions {
+    display: none;
+    padding: 5px 15px;
+    margin-top: 0px;
+}
+
+li.restrictions-heading {
+    background-color: #FFEEEE;
+    padding-left: 10px;
+}
+
+select {
+    border-radius: 5px;
+    border: 1px solid #999999;
+    padding: 0px 15px;
+    font-size: 15px;
+    color: #000
+}
+
+#testbox {
+    border: 1px solid;
+}
