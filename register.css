@@ -24,7 +24,7 @@
     font-family: "Open Sans", sans-serif;
     font-size: 20px;
     display: inline-block;
-    background-image: url("paypal_icon.png");
+    background-image: url("lib/icons/paypal_icon.png");
     background-size: 25px 25px;
     background-repeat: no-repeat;
     background-position: 14px 12px;

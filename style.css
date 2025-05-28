@@ -144,7 +144,7 @@ td {
     width: 100%;
     height: 700px;
     text-align: center;
-    background-image: url('welcome.jpg');
+    background-image: url('lib/assets/welcome.jpg');
     background-size: cover;
     background-position: center;
     font-family: Oswald;
@@ -213,7 +213,7 @@ td {
     text-align: center;
     margin: 30px auto;
     background-color: #AA0000;
-    background-image: url('fb_icon.png');
+    background-image: url('lib/icons/fb_icon.png');
     background-repeat: no-repeat;
     background-position: 14px 15px;
     color: white;
@@ -226,27 +226,27 @@ td {
 
 #socials-button {
     background-size: 70px;
-    background-image: url('socials_icon.png');
+    background-image: url('lib/icons/socials_icon.png');
     padding-left: 90px;
     width: 380px;
 }
 #music-button {
-    background-image: url('music_icon.png');
+    background-image: url('lib/icons/music_icon.png');
     width: 200px;
     font-size: 20px;
 }
 #results-button {
-    background-image: url('form_icon.png');
+    background-image: url('lib/icons/form_icon.png');
     width: 140px;
     font-size: 20px;
 }
 #sport-ladder-videos {
     font-size: 18px;
-    background-image: url('play_icon.png');
+    background-image: url('lib/icons/play_icon.png');
     font-weight: normal;
 }
 #check-button {
-    background-image: url('check_icon.png');
+    background-image: url('lib/icons/check_icon.png');
 }
 #fb:hover , #sport-ladder-videos:hover, #music-button:hover, #results-button:hover, #check-button:hover, #socials-button:hover {
     background-color: #550000;
