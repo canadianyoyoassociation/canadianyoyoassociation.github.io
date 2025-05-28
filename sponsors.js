@@ -73,7 +73,9 @@ function loadGoldSponsors(id, scale) {
     }
     
     if (scale > 0.5) {
-        elem.children('a').children().css('margin', '15px 20px');
+        Array.from(elem.children)
+            .filter(child => child instanceof HTMLAnchorElement)
+            .forEach(child => child.style.margin = "15px 20px");
     }
 }
 
