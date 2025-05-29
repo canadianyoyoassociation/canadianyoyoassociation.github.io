@@ -1,6 +1,20 @@
 function showOneSponsor(elem, url, imgsrc, alt, width, target="_blank") {
-    img = "<a href='" + url + "' target='" + target + "'><img src='" + imgsrc + "' width='" + width + "px' alt='" + alt + "'>";
-    elem.append(img);
+    // load sponsor logo
+    const image = document.createElement("img");
+    image.src = imgsrc;
+    image.width = width;
+    image.alt = alt;
+
+    // create sponsor hyperlink
+    const anchor = document.createElement("a");
+    anchor.href = url;
+    anchor.target = target;
+
+    // wrap image with hyperlink
+    anchor.appendChild(image);
+
+    // append sponsor to the container element
+    elem.appendChild(anchor);
 }
     
 function genRandArray(max) {
@@ -48,7 +62,8 @@ function loadOneGoldSponsor(num, elem, scale) {
 }
 
 function loadGoldSponsors(id, scale) {
-    elem = $("#"+id);
+    const elem = document.getElementById(id);
+    if (!elem) { return; }
     
     numSponsors = 9;
 
@@ -58,12 +73,18 @@ function loadGoldSponsors(id, scale) {
     }
     
     if (scale > 0.5) {
-        elem.children('a').children().css('margin', '15px 20px');
+        Array.from(elem.children)
+            .filter(child => child instanceof HTMLAnchorElement)
+            .forEach(anchor =>
+                Array.from(anchor.children)
+                    .forEach(e => e.style.margin = "15px 20px")
+            );
     }
 }
 
 function loadSilverSponsors(id, scale) {
-    elem = $("#"+id);
+    const elem = document.getElementById(id);
+    if (!elem) { return; }
     
     //showOneSponsor(elem, "https://duncantoys.com/", "sponsors/duncan.png", "Duncan Toys", 230*scale);
 }

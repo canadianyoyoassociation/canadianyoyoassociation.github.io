@@ -103,7 +103,7 @@
     <script src="sponsors.js"></script>
     <script>
         scale = 0.6;
-        screen_width = $(document).width();
+        const screen_width = document.body.scrollWidth;
         if (screen_width < 700) {
             scale *= 0.5;
         }
