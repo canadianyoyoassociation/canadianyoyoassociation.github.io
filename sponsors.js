@@ -75,7 +75,10 @@ function loadGoldSponsors(id, scale) {
     if (scale > 0.5) {
         Array.from(elem.children)
             .filter(child => child instanceof HTMLAnchorElement)
-            .forEach(child => child.style.margin = "15px 20px");
+            .forEach(anchor =>
+                Array.from(anchor.children)
+                    .forEach(e => e.style.margin = "15px 20px")
+            );
     }
 }
 
