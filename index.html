@@ -83,17 +83,17 @@
         the winners of Canadian Nationals will be seeded to the <a href="https://wyyc2025.com/" target="_blank">World YoYo Contest 2025</a>.
         </p>
         <p>This event is family-friendly and open to the public for free. Spectators may enter this event without admission fees.
-        Contestants entering Championship or Junior divisions must <a href="register.html">register here</a>.</p>
+        Contestants must <a href="register.html">register here</a>.</p>
         
         <p>The social media hashtag is <strong>#CanadaNats2025</strong>. To receive the latest updates or get in touch with us, make sure to follow CANYA on social media.</p>
         <a id="socials-button" href="https://linktr.ee/canadianyoyoassociation" target="_blank">&#64;canadianyoyoassociation</a>
 		
         <div id="gold-sponsor-logos">
-            <!--<h1>Sponsors</h1>-->
-		</div>
-        
-        <div id="sponsor-logos">
+            <h1>Sponsors</h1>
         </div>
+        
+        <div id="sponsor-logos"></div>
+
 
     </div>
     
@@ -102,14 +102,16 @@
     <script src="bootsnav.js"></script>
     <script src="sponsors.js"></script>
     <script>
-        scale = 0.6;
+        scale_gold = 0.6;
+        scale_silver = 0.3;
         screen_width = $(document).width();
         if (screen_width < 700) {
-            scale *= 0.5;
+            scale_gold *= 0.6;
+            scale_silver *= 0.8;
         }
-        loadGoldSponsors("gold-sponsor-logos", scale);
+        loadGoldSponsors("gold-sponsor-logos", scale_gold);
         
-        loadSilverSponsors("sponsor-logos", scale);
+        loadSilverSponsors("sponsor-logos", scale_silver);
     </script>
 
 
