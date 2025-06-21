@@ -32,6 +32,9 @@ function loadOneSilverSponsor(num, elem, scale) {
         case 4:
             showOneSponsor(elem, "https://www.instagram.com/julyyoyo_official/?hl=en", "sponsors/julyyoyo.png", "JulyYoYo", 370*scale);
             break;
+        case 5:
+            showOneSponsor(elem, "https://mk1yoyos.com/", "sponsors/mk1.png", "Mk1 Yoyos", 270*scale);
+            break;
     }
 }
     
@@ -71,7 +74,7 @@ function loadOneGoldSponsor(num, elem, scale) {
 function loadSilverSponsors(id, scale) {
     elem = $("#"+id);
     
-    numSponsors = 5;
+    numSponsors = 6;
 
     order = genRandArray(numSponsors);
     for (i = 0; i < numSponsors; i++) {
