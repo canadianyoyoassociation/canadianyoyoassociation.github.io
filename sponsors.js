@@ -35,6 +35,9 @@ function loadOneSilverSponsor(num, elem, scale) {
         case 5:
             showOneSponsor(elem, "https://mk1yoyos.com/", "sponsors/mk1.png", "Mk1 Yoyos", 270*scale);
             break;
+        case 6:
+            showOneSponsor(elem, "https://www.motionyoyo.com/", "sponsors/motionyoyo.png", "Motion Yoyo", 290*scale);
+            break;
     }
 }
     
@@ -80,7 +83,7 @@ function loadOneGoldSponsor(num, elem, scale) {
 function loadSilverSponsors(id, scale) {
     elem = $("#"+id);
     
-    numSponsors = 6;
+    numSponsors = 7;
 
     order = genRandArray(numSponsors);
     for (i = 0; i < numSponsors; i++) {
