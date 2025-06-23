@@ -36,7 +36,7 @@ function getPrice()
 
     if(divs[3].checked) /* junior */
     {
-        total = 35;
+        total = 50;
         div_str = div_str + "Junior";
         total_str = "$" + total;
 
@@ -53,7 +53,7 @@ function getPrice()
     
     else if(divs[2].checked) /* interntional */
     {
-        total = 45;
+        total = 60;
         var int_style = document.getElementsByName("int-style");
         div_str = div_str + "International (" + int_style[0].value + ")";
         total_str = "$" + total;
@@ -81,22 +81,22 @@ function getPrice()
     
         if(divs[0].checked && divs[1].checked)
         {
-            total = 70;
+            total = 120;
             
             var open_style = document.getElementsByName("open-style");
             div_str = div_str + "1A, Open (" + open_style[0].value + ")";
             
-            total_str = "<span style='text-decoration: line-through; text-decoration-thickness: 3px;'>$90</span> $70"
+            total_str = "$120"
         }
         else if(divs[0].checked) /* 1A */
         {
-            total = 45;
+            total = 60;
             div_str = div_str + "1A"
             total_str = "$" + total;
         }
         else if(divs[1].checked) /* open */
         {
-            total = 45;
+            total = 60;
             
             var open_style = document.getElementsByName("open-style");
             div_str = div_str + "Open (" + open_style[0].value + ")";     
@@ -197,7 +197,7 @@ function checkstyle()
         </table>-->
         
         <table id="deadline-table">
-            <tr><td>Early bird deadline</td><td>Sunday June 22</td></tr>
+            <tr><td><span style="color: #DDD; text-decoration: line-through;">Early bird deadline</span></td><td><span style="color: #DDD; text-decoration: line-through;">Sunday June 22</span></td></tr>
             <tr><td>Regular deadline</td><td>Sunday June 29</td></tr>
             <tr><td>Final deadline</td><td>Friday July 4</td></tr>
             <tr><td colspan="2"><span style="font-size: 15px">No fees or music will be accepted on July 5</span></td></tr>
@@ -223,7 +223,7 @@ function checkstyle()
             <table id="fees-table">
             
             <tr>
-                <td><input type="checkbox" name="division" id="1a_div" onclick="getPrice();">&nbsp;&nbsp;&#127464;&#127462; Championship 1A</td><td>$45</td>
+                <td><input type="checkbox" name="division" id="1a_div" onclick="getPrice();">&nbsp;&nbsp;&#127464;&#127462; Championship 1A</td><td>$60</td>
             </tr>
             
             <tr>
@@ -235,7 +235,7 @@ function checkstyle()
                             <option value="4A">4A</option>
                             <option value="5A">5A</option>
                         </select>
-                </td><td>$45</td>
+                </td><td>$60</td>
             </tr>
             
             <tr>
@@ -248,11 +248,11 @@ function checkstyle()
                             <option value="4A">4A</option>
                             <option value="5A">5A</option>
                         </select>
-                </td><td>$45</td>
+                </td><td>$60</td>
             </tr>
             
             <tr>
-                <td><input type="checkbox" name="division" id="int_div" onclick="getPrice();">&nbsp;&nbsp;Junior</td><td>$35</td>
+                <td><input type="checkbox" name="division" id="int_div" onclick="getPrice();">&nbsp;&nbsp;Junior</td><td>$50</td>
             </tr>
             
             <tr id="fees-table-total">
