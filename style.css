@@ -208,7 +208,7 @@ td {
    /* opacity: 0.5;*/
 }
 
-#fb, #sport-ladder-videos , #music-button, #results-button, #check-button, #socials-button {
+#fb, #sport-ladder-videos , #music-button, #results-button, #check-button, #socials-button, #party-button {
     display: block;
     text-align: center;
     margin: 30px auto;
@@ -248,7 +248,15 @@ td {
 #check-button {
     background-image: url('lib/icons/check_icon.png');
 }
-#fb:hover , #sport-ladder-videos:hover, #music-button:hover, #results-button:hover, #check-button:hover, #socials-button:hover {
+
+#party-button {
+    background-image: url('lib/icons/party_icon.png');
+    background-size: 25px 25px;
+    width: 230px;
+    font-size: 20px;
+}
+
+#fb:hover , #sport-ladder-videos:hover, #music-button:hover, #results-button:hover, #check-button:hover, #socials-button:hover, #party-button:hover {
     background-color: #550000;
 }
 
