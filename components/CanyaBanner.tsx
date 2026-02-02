@@ -23,8 +23,8 @@ export default function CanyaBanner() {
         src={`${process.env.NEXT_PUBLIC_BASE_PATH}/assets/2026natslogo.png`}
         alt="2026 Canadian Nationals Logo"
       />
-      <h1 className="mt-3 text-reset">May 17th, 2026</h1>
-      <h1 className="m-0 text-reset">Calgary, AB</h1>
+      <h1 className="mt-3 text-white">May 17th, 2026</h1>
+      <h1 className="m-0 text-white">Calgary, AB</h1>
     </div>
   );
 }
