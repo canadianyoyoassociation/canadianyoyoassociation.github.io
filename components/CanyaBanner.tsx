@@ -13,7 +13,7 @@ export default function CanyaBanner() {
     <div
       className="d-flex flex-column justify-content-center align-items-center py-4"
       style={{
-        backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH}/assets/web_bg.jpg)`,
+        backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH}/assets/web_bg_v2.jpg)`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
