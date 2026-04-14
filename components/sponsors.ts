@@ -47,7 +47,7 @@ const sponsorsGold: Sponsor[] = [
 const sponsorsSilver: Sponsor[] = [
   {
     url: "http://magicyoyo.cn/",
-    img: `${process.env.NEXT_PUBLIC_BASE_PATH}/assets/sponsors/MagicYoyo.png`,
+    img: `${process.env.NEXT_PUBLIC_BASE_PATH}/assets/sponsors/magicyoyo.png`,
     name: "Magic Yoyo",
     size: 500,
   },
