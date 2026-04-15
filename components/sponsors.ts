@@ -20,7 +20,7 @@ const sponsorsGold: Sponsor[] = [
   },
   {
     url: "https://mfdyoyo.com/",
-    img: `${process.env.NEXT_PUBLIC_BASE_PATH}/assets/sponsors/MFD.jpg`,
+    img: `${process.env.NEXT_PUBLIC_BASE_PATH}/assets/sponsors/monkeyfinger.png`,
     name: "Monkeyfinger",
     size: 300,
   },
@@ -41,6 +41,12 @@ const sponsorsGold: Sponsor[] = [
     img: `${process.env.NEXT_PUBLIC_BASE_PATH}/assets/sponsors/TrueArc.png`,
     name: "TrueArc",
     size: 300,
+  },
+  {
+    url: "https://onedropyoyos.com/",
+    img: `${process.env.NEXT_PUBLIC_BASE_PATH}/assets/sponsors/onedrop.png`,
+    name: "Onedrop",
+    size: 375,
   },
 ];
 
