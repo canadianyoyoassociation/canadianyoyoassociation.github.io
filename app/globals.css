@@ -14,7 +14,9 @@
 }
 h1 {
   text-align: center;
-  margin-top: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 h5 {
@@ -42,6 +44,8 @@ li {
   --bs-btn-border-color: #880000;
   --bs-btn-hover-bg: #550000;
   --bs-btn-hover-border-color: #550000;
+  --bs-btn-disabled-bg: #880000;
+  --bs-btn-disabled-border-color: #880000;
 }
 
 .navbar-dark {
