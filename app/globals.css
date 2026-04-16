@@ -48,6 +48,11 @@ li {
   --bs-btn-disabled-border-color: #880000;
 }
 
+.form-check-input:checked {
+    background-color: #880000;
+    border-color: #880000;
+}
+
 .navbar-dark {
   background-color: #550000;
 }
