@@ -70,7 +70,7 @@ export default function RootLayout({
       <body>
         <CanyaNavbar />
         <CanyaBanner />
-        <Container id="main" className="my-3">
+        <Container id="main" className="my-5 pb-2">
           {children}
         </Container>
         <CanyaFooter />
