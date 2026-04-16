@@ -9,7 +9,6 @@ export const metadata: Metadata = {
 const Venue = () => {
   return (
     <>
-      <strong>Updated as of January 9, 2026</strong>
       <h1>Calgary Central Library</h1>
 
       <p className="text-center">
@@ -65,6 +64,15 @@ const Venue = () => {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         />
+        <FigureCaption>
+          Google Maps:{" "}
+          <Link
+            href="https://maps.app.goo.gl/wS3k7QYe9vm4eV4H9"
+            target="_blank"
+          >
+            https://maps.app.goo.gl/wS3k7QYe9vm4eV4H9
+          </Link>
+        </FigureCaption>
       </Figure>
 
       <h1>Patricia A. Whelan Performance Hall</h1>

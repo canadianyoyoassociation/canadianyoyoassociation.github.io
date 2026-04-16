@@ -43,7 +43,7 @@ function renderSponsor(sponsor: Sponsor, scale: number, className: string) {
 function renderSponsorsLarge(
   gold: Sponsor[],
   silver: Sponsor[],
-  windowWidth?: number
+  windowWidth?: number,
 ) {
   let scaleGold = 0.6;
   let scaleSilver = 0.3;
@@ -61,7 +61,7 @@ function renderSponsorsLarge(
       </div>
       <div>
         {silver.map((sponsor) =>
-          renderSponsor(sponsor, scaleSilver, "large-silver")
+          renderSponsor(sponsor, scaleSilver, "large-silver"),
         )}
       </div>
     </Col>
@@ -89,19 +89,17 @@ export default function CanyaFooter() {
   }, [pathname]);
 
   return (
-    <></>
-    // TODO: enable sponsor when confirmed
-    // <footer className="bg-light py-4 mt-4">
-    //   <Container>
-    //     <Row className="text-center">
-    //       {
-    //         // Distinguish between home page and other pages
-    //         new Set(["/", "/index", "/index.html"]).has(pathname)
-    //           ? renderSponsorsLarge(gold, silver, windowWidth)
-    //           : renderSponsorsSmall(gold)
-    //       }
-    //     </Row>
-    //   </Container>
-    // </footer>
+    <footer className="bg-light py-4 mt-4">
+      <Container>
+        <Row className="text-center">
+          {
+            // Distinguish between home page and other pages
+            new Set(["/", "/index", "/index.html"]).has(pathname)
+              ? renderSponsorsLarge(gold, silver, windowWidth)
+              : renderSponsorsSmall(gold)
+          }
+        </Row>
+      </Container>
+    </footer>
   );
 }
