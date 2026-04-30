@@ -10,52 +10,70 @@ const sponsorsGold: Sponsor[] = [
     url: "https://www.44emporium.com/",
     img: `${process.env.NEXT_PUBLIC_BASE_PATH}/assets/sponsors/44emporium.png`,
     name: "44EMPORIUM",
-    size: 450,
+    size: 500,
   },
   {
     url: "https://mezzaninehair.com/",
     img: `${process.env.NEXT_PUBLIC_BASE_PATH}/assets/sponsors/Mezzanine.png`,
-    name: "Mezzanine",
+    name: "Mezzanine Hair Studio",
     size: 450,
   },
   {
     url: "https://mfdyoyo.com/",
     img: `${process.env.NEXT_PUBLIC_BASE_PATH}/assets/sponsors/monkeyfinger.png`,
-    name: "Monkeyfinger",
-    size: 300,
+    name: "MonkeyfingeR",
+    size: 280,
   },
   {
     url: "https://offsetyoyo.com/",
     img: `${process.env.NEXT_PUBLIC_BASE_PATH}/assets/sponsors/OFFSET.png`,
-    name: "OFFSET",
-    size: 450,
+    name: "OFFSET YoYo",
+    size: 400,
   },
   {
     url: "https://yoyofactory.com/en-ca",
     img: `${process.env.NEXT_PUBLIC_BASE_PATH}/assets/sponsors/yyf.png`,
-    name: "YoyoFactory",
+    name: "YoYoFactory",
     size: 200,
   },
   {
     url: "https://truearcreturntops.ca/",
     img: `${process.env.NEXT_PUBLIC_BASE_PATH}/assets/sponsors/TrueArc.png`,
-    name: "TrueArc",
+    name: "True Arc Return Tops",
     size: 300,
   },
   {
     url: "https://onedropyoyos.com/",
     img: `${process.env.NEXT_PUBLIC_BASE_PATH}/assets/sponsors/onedrop.png`,
-    name: "Onedrop",
-    size: 375,
+    name: "One Drop YoYos",
+    size: 450,
+  },
+  {
+    url: "https://www.c3yoyodesign.com/",
+    img: `${process.env.NEXT_PUBLIC_BASE_PATH}/assets/sponsors/c3yoyodesign.png`,
+    name: "C3yoyodesign",
+    size: 450,
+  },
+  {
+    url: "https://yoyofriends.store/",
+    img: `${process.env.NEXT_PUBLIC_BASE_PATH}/assets/sponsors/yoyofriends.png`,
+    name: "Yoyofriends",
+    size: 500,
   },
 ];
 
 const sponsorsSilver: Sponsor[] = [
   {
-    url: "http://magicyoyo.cn/",
+    url: "https://www.gomagicyoyo.com/",
     img: `${process.env.NEXT_PUBLIC_BASE_PATH}/assets/sponsors/magicyoyo.png`,
-    name: "Magic Yoyo",
+    name: "MAGICYOYO",
     size: 500,
+  },
+  {
+    url: "https://www.yoyosam.com/",
+    img: `${process.env.NEXT_PUBLIC_BASE_PATH}/assets/sponsors/yoyosam.png`,
+    name: "YoYoSam",
+    size: 410,
   },
 ];
 
