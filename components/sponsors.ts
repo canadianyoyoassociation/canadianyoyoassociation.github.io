@@ -54,12 +54,6 @@ const sponsorsGold: Sponsor[] = [
     name: "C3yoyodesign",
     size: 450,
   },
-  {
-    url: "https://yoyofriends.store/",
-    img: `${process.env.NEXT_PUBLIC_BASE_PATH}/assets/sponsors/yoyofriends.png`,
-    name: "Yoyofriends",
-    size: 500,
-  },
 ];
 
 const sponsorsSilver: Sponsor[] = [
@@ -74,6 +68,13 @@ const sponsorsSilver: Sponsor[] = [
     img: `${process.env.NEXT_PUBLIC_BASE_PATH}/assets/sponsors/yoyosam.png`,
     name: "YoYoSam",
     size: 410,
+  },
+
+  {
+    url: "https://yoyofriends.store/",
+    img: `${process.env.NEXT_PUBLIC_BASE_PATH}/assets/sponsors/yoyofriends.png`,
+    name: "Yoyofriends",
+    size: 600,
   },
 ];
 
