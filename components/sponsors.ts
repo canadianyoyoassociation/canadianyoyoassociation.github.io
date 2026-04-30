@@ -22,7 +22,7 @@ const sponsorsGold: Sponsor[] = [
     url: "https://mfdyoyo.com/",
     img: `${process.env.NEXT_PUBLIC_BASE_PATH}/assets/sponsors/monkeyfinger.png`,
     name: "MonkeyfingeR",
-    size: 280,
+    size: 300,
   },
   {
     url: "https://offsetyoyo.com/",
@@ -34,7 +34,7 @@ const sponsorsGold: Sponsor[] = [
     url: "https://yoyofactory.com/en-ca",
     img: `${process.env.NEXT_PUBLIC_BASE_PATH}/assets/sponsors/yyf.png`,
     name: "YoYoFactory",
-    size: 200,
+    size: 220,
   },
   {
     url: "https://truearcreturntops.ca/",
