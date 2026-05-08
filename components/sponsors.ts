@@ -54,6 +54,24 @@ const sponsorsGold: Sponsor[] = [
     name: "C3yoyodesign",
     size: 450,
   },
+  {
+    url: "https://www.layerinfinity.com/",
+    img: `${process.env.NEXT_PUBLIC_BASE_PATH}/assets/sponsors/layerinfinity.png`,
+    name: "Layer Infinity",
+    size: 400,
+  },
+  {
+    url: "https://yoyoexpert.com/",
+    img: `${process.env.NEXT_PUBLIC_BASE_PATH}/assets/sponsors/yoyoexpert.png`,
+    name: "YoYoExpert",
+    size: 400,
+  },
+  {
+    url: "https://www.instagram.com/yoyo.calgary",
+    img: `${process.env.NEXT_PUBLIC_BASE_PATH}/assets/sponsors/yoyocalgary.png`,
+    name: "Yoyo Calgary",
+    size: 280,
+  },
 ];
 
 const sponsorsSilver: Sponsor[] = [
@@ -69,11 +87,16 @@ const sponsorsSilver: Sponsor[] = [
     name: "YoYoSam",
     size: 410,
   },
-
   {
     url: "https://yoyofriends.store/",
     img: `${process.env.NEXT_PUBLIC_BASE_PATH}/assets/sponsors/yoyofriends.png`,
     name: "Yoyofriends",
+    size: 600,
+  },
+  {
+    url: "https://en.yoyostorerewind.com/",
+    img: `${process.env.NEXT_PUBLIC_BASE_PATH}/assets/sponsors/rewind.png`,
+    name: "Rewind",
     size: 600,
   },
 ];
