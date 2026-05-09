@@ -10,7 +10,7 @@ const sponsorsGold: Sponsor[] = [
     url: "https://www.44emporium.com/",
     img: `${process.env.NEXT_PUBLIC_BASE_PATH}/assets/sponsors/44emporium.png`,
     name: "44EMPORIUM",
-    size: 500,
+    size: 520,
   },
   {
     url: "https://mezzaninehair.com/",
@@ -46,13 +46,13 @@ const sponsorsGold: Sponsor[] = [
     url: "https://onedropyoyos.com/",
     img: `${process.env.NEXT_PUBLIC_BASE_PATH}/assets/sponsors/onedrop.png`,
     name: "One Drop YoYos",
-    size: 450,
+    size: 470,
   },
   {
     url: "https://www.c3yoyodesign.com/",
     img: `${process.env.NEXT_PUBLIC_BASE_PATH}/assets/sponsors/c3yoyodesign.png`,
     name: "C3yoyodesign",
-    size: 450,
+    size: 470,
   },
   {
     url: "https://www.layerinfinity.com/",
