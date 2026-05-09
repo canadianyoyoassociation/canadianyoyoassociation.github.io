@@ -10,7 +10,7 @@ const sponsorsGold: Sponsor[] = [
     url: "https://www.44emporium.com/",
     img: `${process.env.NEXT_PUBLIC_BASE_PATH}/assets/sponsors/44emporium.png`,
     name: "44EMPORIUM",
-    size: 500,
+    size: 520,
   },
   {
     url: "https://mezzaninehair.com/",
@@ -46,13 +46,31 @@ const sponsorsGold: Sponsor[] = [
     url: "https://onedropyoyos.com/",
     img: `${process.env.NEXT_PUBLIC_BASE_PATH}/assets/sponsors/onedrop.png`,
     name: "One Drop YoYos",
-    size: 450,
+    size: 470,
   },
   {
     url: "https://www.c3yoyodesign.com/",
     img: `${process.env.NEXT_PUBLIC_BASE_PATH}/assets/sponsors/c3yoyodesign.png`,
     name: "C3yoyodesign",
-    size: 450,
+    size: 470,
+  },
+  {
+    url: "https://www.layerinfinity.com/",
+    img: `${process.env.NEXT_PUBLIC_BASE_PATH}/assets/sponsors/layerinfinity.png`,
+    name: "Layer Infinity",
+    size: 400,
+  },
+  {
+    url: "https://yoyoexpert.com/",
+    img: `${process.env.NEXT_PUBLIC_BASE_PATH}/assets/sponsors/yoyoexpert.png`,
+    name: "YoYoExpert",
+    size: 400,
+  },
+  {
+    url: "https://www.instagram.com/yoyo.calgary",
+    img: `${process.env.NEXT_PUBLIC_BASE_PATH}/assets/sponsors/yoyocalgary.png`,
+    name: "Yoyo Calgary",
+    size: 280,
   },
 ];
 
@@ -69,11 +87,16 @@ const sponsorsSilver: Sponsor[] = [
     name: "YoYoSam",
     size: 410,
   },
-
   {
     url: "https://yoyofriends.store/",
     img: `${process.env.NEXT_PUBLIC_BASE_PATH}/assets/sponsors/yoyofriends.png`,
     name: "Yoyofriends",
+    size: 600,
+  },
+  {
+    url: "https://en.yoyostorerewind.com/",
+    img: `${process.env.NEXT_PUBLIC_BASE_PATH}/assets/sponsors/rewind.png`,
+    name: "Rewind",
     size: 600,
   },
 ];
