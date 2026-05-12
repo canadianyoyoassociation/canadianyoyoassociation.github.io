@@ -320,9 +320,10 @@ const Register = () => {
         music for your routine(s).
       </p>
       <p>
-        {/* Please note that music upload now requires a <b>late fee of $30</b>. */}
-        Music upload/change is currently free. However, music submission{" "}
-        <b>after May 11th</b> will incur an extra fee of $30 CAD.
+        Please note that music upload now requires a <b>late fee of $30</b>.
+        {/* TODO(next-year): automate this and disabling the music upload button */}
+        {/* Music upload/change is currently free. However, music submission{" "}
+        <b>after May 11th</b> will incur an extra fee of $30 CAD. */}
       </p>
       <p>
         The final deadline for submitting music is <b>May 15th</b>. No music
@@ -340,6 +341,7 @@ const Register = () => {
           href="https://docs.google.com/forms/d/e/1FAIpQLSfqBD7f6uP_HcJRfJEE1xo3AjELmrhVsK2xZ95D_rK7pOOUCA/viewform"
           target="_blank"
           rel="noopener noreferrer"
+          disabled="true"
         >
           Upload music
         </Button>
