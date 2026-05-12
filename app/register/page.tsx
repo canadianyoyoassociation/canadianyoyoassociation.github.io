@@ -8,17 +8,17 @@ import { Button, FormCheck, FormSelect } from "react-bootstrap";
 const FEES = {
   early: { junior: 35, international: 40, oneA: 45, open: 45, combo: 80 },
   norm: { junior: 50, international: 55, oneA: 65, open: 65, combo: 120 },
-  late: { junior: 70, international: 80, oneA: 90, open: 90, combo: 160 },
+  late: { junior: 70, international: 80, oneA: 90, open: 90, combo: 160 }
 } as { [key: string]: { [key: string]: number } };
 
 const Register = () => {
   // Early bird ends after May 1, 2026 at 1 AM due to Vancouver timezone
-  const IS_EARLY_BIRD = new Date() < new Date("2026-05-02T01:00:00-06:00");
+  const IS_EARLY_BIRD = new Date() < new Date("2026-05-01T00:00:00-06:00");
   // Regular registration ends after May 11, 2026 at 1 AM due to Vancouver timezone
-  const IS_REGULAR = new Date() < new Date("2026-05-12T01:00:00-06:00");
+  const IS_REGULAR = new Date() < new Date("2026-05-11T00:00:00-06:00");
   // Registration ends after May 15, 2026 at 1 AM due to Vancouver timezone
   const REGISTRATION_DISABLED =
-    new Date() >= new Date("2026-05-16T01:00:00-06:00");
+    new Date() >= new Date("2026-05-16T00:00:00-06:00");
 
   const fees = IS_EARLY_BIRD ? FEES.early : IS_REGULAR ? FEES.norm : FEES.late;
 
@@ -319,32 +319,43 @@ const Register = () => {
         In this step you will enter your contestant information and upload the
         music for your routine(s).
       </p>
-      <p>
-        Please note that music upload now requires a <b>late fee of $30</b>.
-        {/* TODO(next-year): automate this and disabling the music upload button */}
-        {/* Music upload/change is currently free. However, music submission{" "}
-        <b>after May 11th</b> will incur an extra fee of $30 CAD. */}
-      </p>
+      {IS_REGULAR ? (
+        <p>
+          Music upload/change is currently free. However, music submission{" "}
+          <b>after May 11th</b> will incur an extra fee of $30 CAD.
+        </p>
+      ) : (
+        <p>
+          Please note that music upload now requires a <b>late fee of $30</b>.
+        </p>
+      )}
+
       <p>
         The final deadline for submitting music is <b>May 15th</b>. No music
         will be accepted on the day of the contest.
       </p>
 
-      {/* <p>
-        Music upload/change now requires an additional fee of <b>$30 CAD</b>.
-        Please <a href="mailto:jchoi4524@gmail.com">contact the organizer</a>{" "}
-        for arrangements to pay this fee, otherwise your new submission will not
-        apply.
-      </p> */}
-      <div className="d-flex pb-4" style={{ justifyContent: "center" }}>
-        <Button
-          href="https://docs.google.com/forms/d/e/1FAIpQLSfqBD7f6uP_HcJRfJEE1xo3AjELmrhVsK2xZ95D_rK7pOOUCA/viewform"
-          target="_blank"
-          rel="noopener noreferrer"
-          disabled="true"
-        >
-          Upload music
-        </Button>
+      <div
+        className="d-flex text-center pb-4"
+        style={{ justifyContent: "center" }}
+      >
+        {IS_REGULAR ? (
+          <Button
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfqBD7f6uP_HcJRfJEE1xo3AjELmrhVsK2xZ95D_rK7pOOUCA/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Upload music
+          </Button>
+        ) : (
+          <p>
+            Music upload/change now requires an additional fee of <b>$30 CAD</b>
+            . Please{" "}
+            <a href="mailto:jchoi4524@gmail.com">contact the organizer</a> for
+            arrangements to pay this fee, otherwise your new submission will not
+            apply.
+          </p>
+        )}
       </div>
 
       <h1>That's it!</h1>
