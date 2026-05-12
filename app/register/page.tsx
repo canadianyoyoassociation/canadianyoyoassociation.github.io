@@ -8,7 +8,7 @@ import { Button, FormCheck, FormSelect } from "react-bootstrap";
 const FEES = {
   early: { junior: 35, international: 40, oneA: 45, open: 45, combo: 80 },
   norm: { junior: 50, international: 55, oneA: 65, open: 65, combo: 120 },
-  late: { junior: 70, international: 80, oneA: 90, open: 90, combo: 160 }
+  late: { junior: 70, international: 80, oneA: 90, open: 90, combo: 160 },
 } as { [key: string]: { [key: string]: number } };
 
 const Register = () => {
