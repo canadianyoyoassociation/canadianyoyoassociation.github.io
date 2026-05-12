@@ -12,13 +12,13 @@ const FEES = {
 } as { [key: string]: { [key: string]: number } };
 
 const Register = () => {
-  // Early bird ends after May 1, 2026
-  const IS_EARLY_BIRD = new Date() < new Date("2026-05-02T00:00:00-06:00");
-  // Regular registration ends after May 11, 2026
-  const IS_REGULAR = new Date() < new Date("2026-05-12T00:00:00-06:00");
-  // Registration ends after May 15, 2026
+  // Early bird ends after May 1, 2026 at 1 AM due to Vancouver timezone
+  const IS_EARLY_BIRD = new Date() < new Date("2026-05-02T01:00:00-06:00");
+  // Regular registration ends after May 11, 2026 at 1 AM due to Vancouver timezone
+  const IS_REGULAR = new Date() < new Date("2026-05-12T01:00:00-06:00");
+  // Registration ends after May 15, 2026 at 1 AM due to Vancouver timezone
   const REGISTRATION_DISABLED =
-    new Date() >= new Date("2026-05-16T00:00:00-06:00");
+    new Date() >= new Date("2026-05-16T01:00:00-06:00");
 
   const fees = IS_EARLY_BIRD ? FEES.early : IS_REGULAR ? FEES.norm : FEES.late;
 

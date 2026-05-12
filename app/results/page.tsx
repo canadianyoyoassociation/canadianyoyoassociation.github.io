@@ -5,40 +5,66 @@ export const metadata: Metadata = {
   title: "Results",
 };
 
+function getImgPath(fileName: string) {
+  return `${process.env.NEXT_PUBLIC_BASE_PATH}/result_files/${fileName}`;
+}
+
 const Results = () => {
   return (
     <>
+{/*
+      NOTE: delete both lines above ⬆️ and below ⬇️ to uncomment a block
+*/}
+
+{/*
+      <h1>Performance order - 1A division Finals</h1>
+      <Image src={getImgPath("order_1Afinal.png")} width="400px" />
+*/}
+
+{/*
+      <h1>Performance order - Open division</h1>
+      <Image src={getImgPath("order_1Aprelim.png")} width="400px" />
+*/}
+
+{/*
+      <h1>Performance order - Junior division</h1>
+      <Image src={getImgPath("order_international.png")} width="400px" />
+*/}
+
+{/*
+      <h1>Performance order - International division</h1>
+      <Image src={getImgPath("order_junior.png")} width="400px" />
+*/}
+
+{/*
+      <h1>Performance order - 1A division Preliminaries</h1>
+      <Image src={getImgPath("order_open.png")} width="400px" />
+*/}
+
+{/*
       <h1>Results - 1A division Finals</h1>
-      <p>i win 😎</p>
-      <Image
-        src={`${process.env.NEXT_PUBLIC_BASE_PATH}/2025/result_files/results_1Afinal.png`}
-        width="800px"
-      />
+      <Image src={getImgPath("results_1Afinal.png")} width="100%" />
+*/}
 
+{/*
       <h1>Results - Open division</h1>
-      <Image
-        src={`${process.env.NEXT_PUBLIC_BASE_PATH}/2025/result_files/results_open.png`}
-        width="800px"
-      />
+      <Image src={getImgPath("results_1Aprelim.png")} width="100%" />
+*/}
 
+{/*
       <h1>Results - Junior division</h1>
-      <Image
-        src={`${process.env.NEXT_PUBLIC_BASE_PATH}/2025/result_files/results_junior.png`}
-        width="400px"
-      />
+      <Image src={getImgPath("results_international.png")} width="100%" />
+*/}
 
+{/*
       <h1>Results - International division</h1>
-      <Image
-        src={`${process.env.NEXT_PUBLIC_BASE_PATH}/2025/result_files/results_international.png`}
-        width="800px"
-      />
+      <Image src={getImgPath("results_junior.png")} width="100%" />
+*/}
 
+{/*
       <h1>Results - 1A division Preliminaries</h1>
-      <p>Top 10 to advance to finals</p>
-      <Image
-        src={`${process.env.NEXT_PUBLIC_BASE_PATH}/2025/result_files/results_1Aprelim.png`}
-        width="800px"
-      />
+      <Image src={getImgPath("results_open.png")} width="100%" />
+*/}
     </>
   );
 };
