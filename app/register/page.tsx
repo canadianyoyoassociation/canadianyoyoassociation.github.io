@@ -319,30 +319,43 @@ const Register = () => {
         In this step you will enter your contestant information and upload the
         music for your routine(s).
       </p>
-      <p>
-        {/* Please note that music upload now requires a <b>late fee of $30</b>. */}
-        Music upload/change is currently free. However, music submission{" "}
-        <b>after May 11th</b> will incur an extra fee of $30 CAD.
-      </p>
+      {IS_REGULAR ? (
+        <p>
+          Music upload/change is currently free. However, music submission{" "}
+          <b>after May 11th</b> will incur an extra fee of $30 CAD.
+        </p>
+      ) : (
+        <p>
+          Please note that music upload now requires a <b>late fee of $30</b>.
+        </p>
+      )}
+
       <p>
         The final deadline for submitting music is <b>May 15th</b>. No music
         will be accepted on the day of the contest.
       </p>
 
-      {/* <p>
-        Music upload/change now requires an additional fee of <b>$30 CAD</b>.
-        Please <a href="mailto:jchoi4524@gmail.com">contact the organizer</a>{" "}
-        for arrangements to pay this fee, otherwise your new submission will not
-        apply.
-      </p> */}
-      <div className="d-flex pb-4" style={{ justifyContent: "center" }}>
-        <Button
-          href="https://docs.google.com/forms/d/e/1FAIpQLSfqBD7f6uP_HcJRfJEE1xo3AjELmrhVsK2xZ95D_rK7pOOUCA/viewform"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Upload music
-        </Button>
+      <div
+        className="d-flex text-center pb-4"
+        style={{ justifyContent: "center" }}
+      >
+        {IS_REGULAR ? (
+          <Button
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfqBD7f6uP_HcJRfJEE1xo3AjELmrhVsK2xZ95D_rK7pOOUCA/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Upload music
+          </Button>
+        ) : (
+          <p>
+            Music upload/change now requires an additional fee of <b>$30 CAD</b>
+            . Please{" "}
+            <a href="mailto:jchoi4524@gmail.com">contact the organizer</a> for
+            arrangements to pay this fee, otherwise your new submission will not
+            apply.
+          </p>
+        )}
       </div>
 
       <h1>That's it!</h1>
