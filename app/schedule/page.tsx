@@ -44,7 +44,7 @@ const Schedule = () => {
           </tr>
           <tr>
             <td>14:00</td>
-            <td>Championship Open and International divisions</td>
+            <td>Championship Open division</td>
           </tr>
           <tr>
             <td>15:00</td>
