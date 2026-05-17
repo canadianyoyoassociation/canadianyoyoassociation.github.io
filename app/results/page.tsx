@@ -22,7 +22,7 @@ const Results = () => {
 */}
 
       <h1>Performance order - Junior & Open divisions</h1>
-      <Image src={getImgPath("order_junior_open.png")} width="400px" />
+      <Image src={getImgPath("order_junior_open.png")} width="800px" />
 
 {/*
       <h1>Performance order - International division</h1>
@@ -30,7 +30,7 @@ const Results = () => {
 */}
 
       <h1>Performance order - 1A division Preliminaries</h1>
-      <Image src={getImgPath("order_1a_prelim.png")} width="400px" />
+      <Image src={getImgPath("order_1a_prelim.png")} width="800px" />
 
 {/*
       <h1>Results - 1A division Finals</h1>
