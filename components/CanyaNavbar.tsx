@@ -23,6 +23,11 @@ const paths = [
     href: "/register",
     active: new Set(["/register", "/register.html"]),
   },
+  {
+    name: "Results",
+    href: "/results",
+    active: new Set(["/results", "/results.html"]),
+  },
 ];
 
 const CanyaNavbar = () => {
