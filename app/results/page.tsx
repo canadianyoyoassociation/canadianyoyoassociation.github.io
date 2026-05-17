@@ -26,6 +26,8 @@ const Results = () => {
       <Image src={getImgPath("order_1Aprelim.png")} width="400px" />
 */}
 
+      <h1>Performance order - Junior & Open divisions</h1>
+      <Image src={getImgPath("order_junior_open.png")} width="400px" />
 {/*
       <h1>Performance order - Junior division</h1>
       <Image src={getImgPath("order_international.png")} width="400px" />
