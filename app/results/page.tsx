@@ -16,6 +16,15 @@ const Results = () => {
       NOTE: delete both lines above ⬆️ and below ⬇️ to uncomment a block
 */}
 
+      <h1>Results - 1A division Finals</h1>
+      <Image src={getImgPath("results_1Afinal.png")} width="100%" />
+
+      <h1>Results - Open division</h1>
+      <Image src={getImgPath("results_open.png")} width="100%" />
+
+      <h1>Results - Junior division</h1>
+      <Image src={getImgPath("results_junior.png")} width="100%" />
+
       <h1>Results - 1A division Preliminaries</h1>
       <Image src={getImgPath("results_1Aprelim.png")} width="100%" />
 
@@ -35,20 +44,6 @@ const Results = () => {
 {/*
       <h1>Performance order - 1A division Preliminaries</h1>
       <Image src={getImgPath("order_1a_prelim.png")} width="800px" />
-*/}
-{/*
-      <h1>Results - 1A division Finals</h1>
-      <Image src={getImgPath("results_1Afinal.png")} width="100%" />
-*/}
-
-{/*
-      <h1>Results - Open division</h1>
-      <Image src={getImgPath("results_1Aprelim.png")} width="100%" />
-*/}
-
-{/*
-      <h1>Results - Junior division</h1>
-      <Image src={getImgPath("results_international.png")} width="100%" />
 */}
 
 {/*
